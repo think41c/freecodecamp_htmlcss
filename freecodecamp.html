@@ -1,4 +1,7 @@
-var nameString = function (name) {
-    return "Hi, I am" + " " + name;
-};
-console.log(nameString("tony"));
+var coinFace = Math.floor(Math.random() * 2);
+
+while(coinFace === 0){
+  console.log("Heads! Flipping again...");
+  var coinFace = Math.floor(Math.random() * 2);
+}
+console.log("Tails! Done flipping.");

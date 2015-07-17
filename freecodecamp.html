@@ -1,6 +1,11 @@
-var bool = true;
+//Remember to set your condition outside the loop!
+    var count = 0; 
 
-while(bool){
-    console.log("Less is more!");
-    bool = false;
-}
+var loop = function(){
+  while(count < 3){
+    console.log("I'm looping!");
+    count++;
+  }
+};
+
+loop();

@@ -1,11 +1,11 @@
-//Remember to set your condition outside the loop!
-    var count = 0; 
+//Remember to make your condition true outside the loop!
+var myCondition = true;
 
-var loop = function(){
-  while(count < 3){
-    console.log("I'm looping!");
-    count++;
-  }
+var soloLoop = function(){
+    while (myCondition === true){
+        console.log("Looped once!");
+        myCondition = false;
+    };
 };
 
-loop();
+soloLoop();

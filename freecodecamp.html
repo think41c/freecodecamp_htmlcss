@@ -1,20 +1,11 @@
-// Write your code below!
+var hungry = true;
+var foodHere = true; 
 
-var x = prompt("Favorite color", "write it here");
-switch(x) {
-    case 'yellow':
-        console.log("Why?");
-        break;
-    case 'black':
-        console.log("Cool");
-        break;
-    case 'green':
-        console.log("Froggy!");
-        break;
-    default:
-        console.log("Pick yellow or black.");
-        break;
-}
 
-    
-    
+var eat = function() {
+  if (hungry == true && foodHere == true){
+      return true;
+  } else {
+      return false;
+  }
+};

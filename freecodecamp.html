@@ -1,7 +1,17 @@
+var x = true
+var y = true
+var z = true
+
 var user = prompt("Ready to go?").toLowerCase();
 switch(user) {
     case 'yes':
         console.log("Lets go!");
+        if (x==true || y ==true){
+            console.log("Some things are true!");
+        } else if (x==true && z==true) {
+            console.log("Everything is true.");
+        }
+        
         break;
     case 'no':
         console.log("B");

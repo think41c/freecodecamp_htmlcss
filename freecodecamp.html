@@ -1,18 +1,15 @@
-var lunch = prompt("What do you want for lunch?","Type your lunch choice here");
+var color = prompt("What's your favorite primary color?","Type your favorite color here");
 
-switch(lunch){
-  case 'sandwich':
-    console.log("Sure thing! One sandwich, coming up.");
+switch(color) {
+  case 'red':
+    console.log("Red's a good color!");
     break;
-  case 'soup':
-    console.log("Got it! Tomato's my favorite.");
+  case 'blue':
+    console.log("That's my favorite color, too!");
     break;
-  case 'salad':
-    console.log("Sounds good! How about a caesar salad?");
-    break;
-  case 'pie':
-    console.log("Pie's not a meal!");
+  case 'yellow':
+    console.log("Whatever");
     break;
   default:
-    console.log("Huh! I'm not sure what " + lunch + " is. How does a sandwich sound?");
+    console.log("I don't think that's a primary color!");
 }

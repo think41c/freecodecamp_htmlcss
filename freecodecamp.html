@@ -1,21 +1,7 @@
-var slaying = true; 
-var youHit = Math.floor(Math.random() * 2);
-console.log(youHit);
-var damageThisRound = Math.floor(Math.random()*5+1);
-var totalDamage = 0;
-while(slaying){
-    slaying = false;
-    if (youHit == true){
-        console.log("You killed it.");
-        totalDamage += damageThisRound;
-        if (totalDamage >= 4){
-            console.log("Its been slewn.");
-            slaying = false;
-        } else {
-            youHit = Math.floor(Math.random()*2); 
-        };
+var isEven = function(number) {
+    if (number % 2 == 0) {
+        return true; 
     } else {
-        console.log("You didn't");
-    }
+        return false;
+    };
 };
-    

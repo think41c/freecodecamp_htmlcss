@@ -1,12 +1,15 @@
-// Declare your variables here!
-programming = !true;
-
-var happy = function() {
-    if (programming != true){
-        return true; 
-    } else {
-        return false;
-    }
-    
-  
-};
+var user = prompt("Ready to go?").toLowerCase();
+switch(user) {
+    case 'yes':
+        console.log("Lets go!");
+        break;
+    case 'no':
+        console.log("B");
+        break;
+    case 'maybe':
+        console.log("why?");
+        break;
+    default: 
+        console.log("Try again");
+        break;
+}

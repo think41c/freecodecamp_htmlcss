@@ -11,19 +11,16 @@ friends["steve"] = {
         lastName: "Jobs",
         number: "232-231-5455"
     };
-
-
-var list = function(zzzz) {
-  for(var azaz in zzzz) {
+var list = function(friends) {
+  for(var azaz in friends) {
     console.log(azaz);
   }
 };
-
-
-// var search = function(name) {
-//   for(var prop in friends) {
-//     if(friends[prop].firstName === name) {
-//       console.log(friends[prop]);
-//       return friends[prop];
-//     }
-//   }
+var search = function(name) {
+    for (var prop in friends) {
+        if(friends[prop].firstName === name) {
+            console.log(friends[prop]);
+            return friends[prop];
+        }
+    }
+}

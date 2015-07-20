@@ -1,8 +1,13 @@
-var myObj = {
-    food: "broc",
-    water: "vitamin"
-};
+obj1 = new Object();
+obj2 = {
+    horse: "hey",
+    key: "value"
+}
+obj1.bovine = "cow";
+obj1["swine"] = "pig";
 
-var myObj2 = new Object();
-myObj2.name = "Tony"
-myArray = [1,true,"yum",myObj, myObj2]
+obj3 = new Object();
+obj3.canine = "dog";
+
+var newArray = [[1,2], [obj1,obj2, obj3], [false], [1,2,3,4,5]];
+console.log(newArray);

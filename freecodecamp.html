@@ -1,13 +1,29 @@
-var friends = {
-    bill: {
+var friends = {};
+
+friends.bill = {
         firstName: "Bill",
         lastName: "Gates",
         number: "1233123232",
         address: ["12 Cat Dr", "Yummy", "AL"]
-    }
-    // steve: {
-        // firstName: "Steve"
-        // lastName: "Jobs",
-        // number: "232-231-5455"
-    // }
+    };
+friends["steve"] = {
+        firstName: "Steve",
+        lastName: "Jobs",
+        number: "232-231-5455"
+    };
+
+
+var list = function(zzzz) {
+  for(var azaz in zzzz) {
+    console.log(azaz);
+  }
 };
+
+
+// var search = function(name) {
+//   for(var prop in friends) {
+//     if(friends[prop].firstName === name) {
+//       console.log(friends[prop]);
+//       return friends[prop];
+//     }
+//   }

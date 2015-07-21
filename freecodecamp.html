@@ -1,26 +1,6 @@
-var friends = {};
+// Here is an array of multiples of 8. But is it correct?
+var multiplesOfEight = [8,16,24,32,40,58];
 
-friends.bill = {
-        firstName: "Bill",
-        lastName: "Gates",
-        number: "1233123232",
-        address: ["12 Cat Dr", "Yummy", "AL"]
-    };
-friends["steve"] = {
-        firstName: "Steve",
-        lastName: "Jobs",
-        number: "232-231-5455"
-    };
-var list = function(friends) {
-  for(var azaz in friends) {
-    console.log(azaz);
-  }
-};
-var search = function(name) {
-    for (var prop in friends) {
-        if(friends[prop].firstName === name) {
-            console.log(friends[prop]);
-            return friends[prop];
-        }
-    }
-}
+// Test to see if a number from the array is NOT a true
+// multiple of eight. Real multiples will return false.
+var answer = multiplesOfEight[6] % 8 !== 0;

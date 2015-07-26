@@ -1,28 +1,9 @@
-// Our person constructor
-function Person (name, age) {
-    this.name = name;
-    this.age = age;
-}
-
-// We can make a function which takes persons as arguments
-// This one computes the difference in ages between two people
-var ageDifference = function(person1, person2) {
-    return person1.age - person2.age;
+var spencer = {
+  age: 22,
+  country: "United States"
 };
 
-// Make a new function, olderAge, to return the age of
-// the older of two people
-var olderAge = function(p1, p2) {
-    if (p1.age > p2.age) {    
-        return p1.age
-    } else {
-        return p2.age
-    }
-};
-
-
-// Let's bring back alice and billy to test our new function
-var alice = new Person("Alice", 30);
-var billy = new Person("Billy", 25);
-
-console.log("The older person is " + olderAge(alice, billy));
+// make spencer2 here with constructor notation
+spencer2 = new Object();
+spencer2.age = 22;
+spencer2.country = "United States";

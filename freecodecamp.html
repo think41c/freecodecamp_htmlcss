@@ -20,9 +20,20 @@ function printPerson(person) {
 
 function list() {
     var contactsLength = contacts.length;
-    for (i=0; i < contactsLength; i++) {
+    for (var i = 0; i < contactsLength; i++) {
         printPerson(contacts[i]);
     };
 };
 
-list();
+function search(lastName) {
+    
+    var contactsLength = contacts.length;
+    for (var i=0; i < contactsLength; i++) {
+        if (contacts[i].lastName === lastName) {
+            
+            return console.log(printPerson(contacts[i]));
+        };
+    };    
+};
+
+search("Jones");

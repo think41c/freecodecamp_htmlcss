@@ -26,14 +26,21 @@ function list() {
 };
 
 function search(lastName) {
-    
     var contactsLength = contacts.length;
     for (var i=0; i < contactsLength; i++) {
         if (contacts[i].lastName === lastName) {
-            
             return console.log(printPerson(contacts[i]));
         };
     };    
 };
 
-search("Jones");
+function add(firstName, lastName, email, phoneNumber) {
+    contacts[contacts.length] = {
+    firstName: firstName,
+    lastName: lastName,
+    phoneNumber: phoneNumber,
+    email: email
+    };
+};
+add("tony", "dinitto", "tony@zzz.com", "234-234-2342");
+list();

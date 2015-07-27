@@ -1,46 +1,12 @@
-var bob = {
-    firstName: "Bob",
-    lastName: "Jones",
-    phoneNumber: "(650) 777-7777",
-    email: "bob.jones@example.com"
+var james = {
+    job: "programmer",
+    married: false
 };
 
-var mary = {
-    firstName: "Mary",
-    lastName: "Johnson",
-    phoneNumber: "(650) 888-8888",
-    email: "mary.johnson@example.com"
-};
+function Person(job, married) {
+    this.job = job;
+    this.married = married;
+}
 
-var contacts = [bob, mary];
+var gabby = new Person("student", true);
 
-function printPerson(person) {
-    console.log(person.firstName + " " + person.lastName);
-};
-
-function list() {
-    var contactsLength = contacts.length;
-    for (var i = 0; i < contactsLength; i++) {
-        printPerson(contacts[i]);
-    };
-};
-
-function search(lastName) {
-    var contactsLength = contacts.length;
-    for (var i=0; i < contactsLength; i++) {
-        if (contacts[i].lastName === lastName) {
-            return console.log(printPerson(contacts[i]));
-        };
-    };    
-};
-
-function add(firstName, lastName, email, phoneNumber) {
-    contacts[contacts.length] = {
-    firstName: firstName,
-    lastName: lastName,
-    phoneNumber: phoneNumber,
-    email: email
-    };
-};
-add("tony", "dinitto", "tony@zzz.com", "234-234-2342");
-list();

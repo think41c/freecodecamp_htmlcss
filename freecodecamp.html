@@ -1,10 +1,14 @@
-function Person(job, married) {
-    this.job = job;
-    this.married = married;
-    this.speak = function() {
-        console.log("Hello!");
-    };
+var james = {
+    job: "programmer",
+    married: false,
+    speak: function(feeling) {
+        if (feeling == "great") {
+            console.log("Hello, I am feeling great");
+        } else {
+            console.log("Hello, I am feeling just okay");
+        }
+    }
 };
 
-var user = new Person("Codecademy Student",false);
-user.speak();
+james.speak("great");
+james.speak("just okay");

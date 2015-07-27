@@ -1,14 +1,17 @@
 var james = {
     job: "programmer",
     married: false,
-    speak: function(feeling) {
-        if (feeling == "great") {
-            console.log("Hello, I am feeling great");
-        } else {
-            console.log("Hello, I am feeling just okay");
-        }
+    sayJob: function(job) {
+        // complete this method
+        console.log("Hi, I work as a " + this.job);
     }
 };
 
-james.speak("great");
-james.speak("just okay");
+// james' first job
+james.sayJob();
+
+// change james' job to "super programmer" here
+james.job = "super programmer";
+
+// james' second job
+james.sayJob();

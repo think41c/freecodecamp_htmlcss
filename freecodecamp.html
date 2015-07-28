@@ -1,15 +1,15 @@
-function Person(name,age) {
-  this.name = name;
-  this.age = age;
-}
-// a function that prints the name of any given person
-var printPersonName = function (p) {
-  console.log(p.name);
+function Dog (breed) {
+  this.breed = breed;
 };
 
-var bob = new Person("Bob Smith", 30);
-printPersonName(bob);
-var me  = new Person("Tony", 35);
-// make a person called me with your name and age
-// then use printPersonName to print your name
-console.log(me.name);
+// here we make buddy and teach him how to bark
+var buddy = new Dog("golden Retriever");
+Dog.prototype.bark = function() {
+  console.log("Woof");
+};
+buddy.bark();
+
+// here we make snoopy
+var snoopy = new Dog("Beagle");
+/// this time it works!
+snoopy.bark();

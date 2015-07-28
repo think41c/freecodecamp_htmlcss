@@ -2,15 +2,14 @@ function Person(name,age) {
   this.name = name;
   this.age = age;
 }
+// a function that prints the name of any given person
+var printPersonName = function (p) {
+  console.log(p.name);
+};
 
-// Let's make bob again, using our constructor
 var bob = new Person("Bob Smith", 30);
-var susan = new Person("Susan Jordan", 35);
-
-// make your own class here
-
-function Circle(radius) {
-    this.radius = radius;
-}
-
-
+printPersonName(bob);
+var me  = new Person("Tony", 35);
+// make a person called me with your name and age
+// then use printPersonName to print your name
+console.log(me.name);

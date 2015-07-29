@@ -3,10 +3,15 @@ function Person(first,last,age) {
    this.lastname = last;
    this.age = age;
    var bankBalance = 7500;
+  
+   this.getBalance = function() {
+      return bankBalance;
+   };
 }
 
-// create your Person 
-var john = new Person("John", "McNothing", 29);
-console.log(john.bankbalance);
+var john = new Person('John','Smith',30);
+console.log(john.bankBalance);
 
-// try to print his bankBalance
+// create a new variable myBalance that calls getBalance()
+myBalance = john.getBalance();
+console.log(myBalance);

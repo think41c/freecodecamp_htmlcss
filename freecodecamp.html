@@ -1,11 +1,12 @@
 function Person(first,last,age) {
-   this.firstName = first;
-   this.lastName = last;
+   this.firstname = first;
+   this.lastname = last;
    this.age = age;
+   var bankBalance = 7500;
 }
 
-var john = new Person('John','Smith',30);
-var myFirst = john.firstName;
-var myLast = john.lastName;
-var myAge = john.age;
-//declare variable myAge set to the age of the john object.
+// create your Person 
+var john = new Person("John", "McNothing", 29);
+console.log(john.bankbalance);
+
+// try to print his bankBalance

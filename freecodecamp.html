@@ -1,37 +1,21 @@
-<html>
-<script>
 function Person(first,last,age) {
    this.firstname = first;
    this.lastname = last;
    this.age = age;
    var bankBalance = 7500;
   
-   this.getBalance = function() {
+   var returnBalance = function() {
       return bankBalance;
    };
-}
+       
+   // create the new function here
+   this.askTeller = function() {
+       return returnBalance;
+   };
+};
 
 var john = new Person('John','Smith',30);
-console.log(john.bankBalance);
-
-// create a new variable myBalance that calls getBalance()
-myBalance = john.getBalance();
+console.log(john.returnBalance);
+var myBalanceMethod = john.askTeller();
+var myBalance = myBalanceMethod();
 console.log(myBalance);
-
-function Person(first, last, age) {  // Is this a class?
-    this.first_name = first;
-    this.last_name = last
-}
-
-// var jj = new Person('j', 'd', 16);
-// console.log(jj);
-
-
-
-</script>
-</html>
-
-
-// When a class is called to the console.log without specifing a method or variable, it will spit out the entire contents of the instance of that object 
-// as a Hash. Such that:
-// console.log(john);  => Person {first name: 'j', last_name: 'd', 16}

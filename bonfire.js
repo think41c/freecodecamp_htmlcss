@@ -1,9 +1,9 @@
 function palindrome(str) {
   str = str.replace(" ", "").toLowerCase();
   str = str.replace(/,/,"");
-  forward = str.split("").join().replace(/[,.]/g, "");
+  forward = str.split("").join().replace(/[,. ]/g, "");
   console.log(forward);
-  reverse = str.split("").reverse().join().replace(/[,.]/g, "");
+  reverse = str.split("").reverse().join().replace(/[,. ]/g, "");
   console.log(reverse);
   if (forward == reverse) {
     answer = true;
@@ -12,4 +12,4 @@ function palindrome(str) {
   }
   return answer;
 }
-console.log(palindrome("Hi, Stam."));
+palindrome("A man, a plan, a canal. Panama")

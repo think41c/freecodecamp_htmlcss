@@ -1,15 +1,15 @@
-function palindrome(str) {
-  str = str.replace(" ", "").toLowerCase();
-  str = str.replace(/,/,"");
-  forward = str.split("").join().replace(/[,. ]/g, "");
-  console.log(forward);
-  reverse = str.split("").reverse().join().replace(/[,. ]/g, "");
-  console.log(reverse);
-  if (forward == reverse) {
-    answer = true;
-  } else {
-    answer = false;
+function findLongestWord(str) {
+  var longest = 0;
+  str = str.split(" ");
+  console.log(str[0]);
+  console.log(str);
+  console.log(str[0].length);
+  for (var i=0; i<str.length; i++){
+    if (str[i].length > longest) {
+      longest = str[i].length;
+    } 
   }
-  return answer;
+  return longest;
 }
-palindrome("A man, a plan, a canal. Panama")
+
+findLongestWord('The quick brown fox jumped over the lazy dog');

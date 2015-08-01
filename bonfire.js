@@ -1,8 +1,13 @@
-function xxx(num){
-  var holder = 1;
-  for (var i=2; i<=num; i++){
-    holder *= i;
+function palindrome(str) {
+  str = str.replace(" ", "").toLowerCase();
+  forward = str.split("");
+  reverse = str.split("").reverse().join();
+  console.log(reverse);
+  if (forward == reverse) {
+    answer = true;
+  } else {
+    answer = false;
   }
-  return holder;
+  return answer;
 }
-console.log(xxx(5));
+palindrome("cow");

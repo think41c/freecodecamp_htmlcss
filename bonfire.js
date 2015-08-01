@@ -1,7 +1,9 @@
 function palindrome(str) {
   str = str.replace(" ", "").toLowerCase();
-  forward = str.split("");
-  reverse = str.split("").reverse().join();
+  str = str.replace(/,/,"");
+  forward = str.split("").join().replace(/[,.]/g, "");
+  console.log(forward);
+  reverse = str.split("").reverse().join().replace(/[,.]/g, "");
   console.log(reverse);
   if (forward == reverse) {
     answer = true;
@@ -10,4 +12,4 @@ function palindrome(str) {
   }
   return answer;
 }
-palindrome("cow");
+console.log(palindrome("Hi, Stam."));

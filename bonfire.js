@@ -1,15 +1,9 @@
-function findLongestWord(str) {
-  var longest = 0;
-  str = str.split(" ");
-  console.log(str[0]);
-  console.log(str);
-  console.log(str[0].length);
-  for (var i=0; i<str.length; i++){
-    if (str[i].length > longest) {
-      longest = str[i].length;
-    } 
-  }
-  return longest;
+function titleCase(str) {
+  x = (str.split(" "));
+  for (var i=0; i<x.length; i++){
+    console.log(x[i].charAt(0).toUpperCase());
+  };
+  return str;
 }
 
-findLongestWord('The quick brown fox jumped over the lazy dog');
+titleCase("I'm a little tea pot");

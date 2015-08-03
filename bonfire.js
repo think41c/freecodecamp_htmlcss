@@ -10,13 +10,11 @@ function largestOfFour(arr) {
       } else {
       console.log("smaller" + arr[block][i]);
       }
-      result.push(larger_temp);
     }
+    result.push(larger_temp);
   }
   console.log("Result ->" + result);
   return arr;
 }
 
 console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
-
-// console.log(largestOfFour([[1,2,3,4],[5,6,7,8]]));

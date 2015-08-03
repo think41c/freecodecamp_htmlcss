@@ -5,12 +5,10 @@ function largestOfFour(arr) {
   for (var block=0; block<arr.length; block++){
     larger_temp = 0;
     for (var i=0; i<arr.length; i++) {
-    if (arr[block][i] > larger_temp){
-      larger_temp = arr[block][i];
-      } else {
-      console.log("smaller" + arr[block][i]);
+      if (arr[block][i] > larger_temp) {
+        larger_temp = arr[block][i];
+        } 
       }
-    }
     result.push(larger_temp);
   }
   console.log("Result ->" + result);

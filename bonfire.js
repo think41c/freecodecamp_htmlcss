@@ -1,8 +1,10 @@
-function power ( base , exponent ) {
-if ( exponent == 0)
-  return 1;
-else
-  return base * power( base , exponent - 1);
+function countBs(stringy){
+  var counter = 0;
+  for (var i=0; i<stringy.length; i++){
+    console.log(stringy.charAt(i));
+    if (stringy.charAt(i) == "B")
+      counter += 1;
+  }
+  return counter;
 }
-
-console.log(power (2 , 3));
+console.log(countBs("There BBBz"));

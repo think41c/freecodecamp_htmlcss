@@ -1,10 +1,32 @@
-function countBs(stringy, searchChar){
-  var counter = 0;
-  for (var i=0; i<stringy.length; i++){
-    console.log(stringy.charAt(i));
-    if (stringy.charAt(i) == searchChar)
-      counter += 1;
+function sum(array){
+  var total = 0;
+  for (var i=0; i<array.length; i++) {
+    total += array[i];
   }
-  return counter;
+  return total;
 }
-console.log(countBs("There BBBz", "p"));
+
+function range(start, end, step) {
+  if (step == null) step = 1;
+  
+  var array = [];
+  
+  if (step > 0) {
+    for (var i=start; i<=end; i+=step) {
+      console.log("i>= end?");
+      array.push(i);
+      } 
+  } else {
+    for (var i=start; i>=end; i+=step) {
+      console.log("here?");
+      array.push(i);  
+    }
+  }
+  
+  return array;
+}
+
+console.log(sum(range(1,10)));
+console.log(sum(range(1, 10)));
+console.log(range(1,10));
+console.log(range(2, 9, 1));
